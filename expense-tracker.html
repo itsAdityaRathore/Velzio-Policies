@@ -30,7 +30,7 @@
         <a class="back" href=".">&larr; All policies</a>
         <h1>Privacy Policy</h1>
         <p class="app-name">Expense Tracker by Velzio</p>
-        <p class="updated">Last updated: April 18, 2026</p>
+        <p class="updated">Last updated: April 20, 2026</p>
 
         <h2>Overview</h2>
         <p>Expense Tracker ("the App") is built by Velzio. This policy explains what data the App collects, how it is used, and your choices.</p>
@@ -52,6 +52,10 @@
             <li><strong>Firebase Remote Config</strong> &mdash; allows us to update app configuration remotely (e.g., feature flags, display text). No personal data is collected.</li>
             <li><strong>Firebase Crashlytics</strong> &mdash; collects anonymous crash reports including device model, OS version, and stack traces to help us fix bugs. No financial or personal data is included in crash reports.</li>
             <li><strong>Google ML Kit</strong> &mdash; powers on-device receipt scanning (OCR). All text recognition happens locally on your device. No images or extracted text are uploaded.</li>
+            <li><strong>Google Gemini API</strong> &mdash; generates personalized spending insights from summarized data. The App sends category totals, spending trends, and time patterns (not raw transaction details, notes, or personal identifiers) to Google&rsquo;s Gemini API via a secure Cloud Function. See <a href="https://ai.google.dev/terms" target="_blank">Google AI Terms of Service</a>.</li>
+            <li><strong>Firebase Cloud Functions</strong> &mdash; routes AI requests through a secure server-side proxy. Requests include an anonymous identifier for rate limiting &mdash; no email, name, or account data is sent.</li>
+            <li><strong>Firebase Anonymous Authentication</strong> &mdash; creates an anonymous identifier on your device for service access. No personal information (name, email, phone number) is collected or required.</li>
+            <li><strong>Google Firestore</strong> &mdash; stores anonymous rate-limiting counters (request counts per day). No financial data or personal information is stored in Firestore.</li>
         </ul>
 
         <h2>Permissions</h2>
@@ -60,6 +64,9 @@
             <li><strong>Camera</strong> &mdash; used for receipt scanning, if you choose to use that feature. Images are processed on-device and are not uploaded.</li>
             <li><strong>Notifications</strong> &mdash; used to send daily expense reminders, spending insights, and announcements. You control which notifications you receive via in-app settings. All notification types are off by default.</li>
         </ul>
+
+        <h2>AI-Generated Content</h2>
+        <p>The App uses Google&rsquo;s Gemini language model to generate spending insights, explanations, and chat responses. All AI-generated content is clearly labeled within the App. These insights are for informational purposes only and do not constitute financial, investment, or legal advice. The App sends only summarized, aggregated spending data (such as category totals and time-of-day patterns) to the AI service &mdash; never raw transaction details, merchant names from notes, or personal identifiers.</p>
 
         <h2>Data Sharing</h2>
         <p>We do not sell, trade, or share your personal data with third parties. The only data leaving your device is what AdMob and Google Play Billing collect as described above.</p>
