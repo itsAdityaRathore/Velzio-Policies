@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Velzio Apps - Privacy Policies</title>
+    <title>Velzio Apps - Policies</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -25,20 +25,43 @@
             color: #6b7280;
             margin-bottom: 40px;
         }
+        .app-section {
+            margin-bottom: 32px;
+        }
+        .app-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #1a1a2e;
+        }
         .card {
             background: #fff;
             border-radius: 12px;
-            padding: 20px 24px;
-            margin-bottom: 12px;
+            padding: 16px 20px;
+            margin-bottom: 8px;
             text-decoration: none;
             color: inherit;
-            display: block;
+            display: flex;
+            align-items: center;
             box-shadow: 0 1px 3px rgba(0,0,0,0.06);
             transition: box-shadow 0.15s;
         }
         .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        .card h2 { font-size: 1.1rem; margin-bottom: 4px; }
-        .card p { color: #6b7280; font-size: 0.9rem; }
+        .card .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 14px;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .card .icon.privacy { background: #e0f2fe; }
+        .card .icon.terms { background: #fef3c7; }
+        .card h2 { font-size: 0.95rem; margin-bottom: 2px; }
+        .card p { color: #6b7280; font-size: 0.8rem; }
         footer {
             margin-top: 48px;
             color: #9ca3af;
@@ -50,22 +73,47 @@
 <body>
     <div class="container">
         <h1>Velzio Apps</h1>
-        <p class="subtitle">Privacy policies for our applications.</p>
+        <p class="subtitle">Privacy policies and terms of service for our applications.</p>
 
-        <a class="card" href="expense-tracker">
-            <h2>Expense Tracker</h2>
-            <p>Track your daily spending with quick-add and insights.</p>
-        </a>
+        <div class="app-section">
+            <div class="app-name">Expense Tracker</div>
+            <a class="card" href="expense-tracker">
+                <div class="icon privacy">&#128274;</div>
+                <div>
+                    <h2>Privacy Policy</h2>
+                    <p>How we handle your data, AI features, and third-party services.</p>
+                </div>
+            </a>
+            <a class="card" href="expense-tracker-terms">
+                <div class="icon terms">&#128220;</div>
+                <div>
+                    <h2>Terms of Service</h2>
+                    <p>Subscriptions, AI disclaimer, acceptable use, and liability.</p>
+                </div>
+            </a>
+        </div>
 
-        <a class="card" href="qr-scanner">
-            <h2>QR Scanner</h2>
-            <p>Scan and create QR codes and barcodes.</p>
-        </a>
+        <div class="app-section">
+            <div class="app-name">QR Scanner</div>
+            <a class="card" href="qr-scanner">
+                <div class="icon privacy">&#128274;</div>
+                <div>
+                    <h2>Privacy Policy</h2>
+                    <p>How we handle your data and third-party services.</p>
+                </div>
+            </a>
+        </div>
 
-        <a class="card" href="pdf-reader">
-            <h2>PDF Reader</h2>
-            <p>View, search, and manage PDF documents.</p>
-        </a>
+        <div class="app-section">
+            <div class="app-name">PDF Reader</div>
+            <a class="card" href="pdf-reader">
+                <div class="icon privacy">&#128274;</div>
+                <div>
+                    <h2>Privacy Policy</h2>
+                    <p>How we handle your data and third-party services.</p>
+                </div>
+            </a>
+        </div>
 
         <footer>&copy; 2026 Velzio. All rights reserved.</footer>
     </div>
