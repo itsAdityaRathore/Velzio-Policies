@@ -1,6 +1,6 @@
 # Privacy Policy — Expense Tracker
 
-**Effective date:** April 16, 2026
+**Effective date:** April 24, 2026
 **Developer:** Velzio
 **Contact:** velzio.apps@gmail.com
 **Package:** com.velzio.expense_tracker
@@ -67,6 +67,21 @@ The app's AI features (weekly reports, overspend alerts, chat) use **Google Gemi
 This data is processed by Google under their [Gemini API Terms of Service](https://ai.google.dev/gemini-api/terms). Google may use this data as described in their privacy policy. We do not store any data on our own servers.
 
 **Important:** AI-generated insights are for informational purposes only and do not constitute financial, investment, or legal advice.
+
+### Firebase Analytics
+
+We use Firebase Analytics (Google Analytics for Firebase) to understand how people use the app so we can improve it. This service collects anonymous usage data including:
+
+- **Screens visited** and navigation patterns
+- **Feature usage** (e.g. which features are used most, button taps)
+- **App events** (e.g. transactions added, categories created — counts only, no amounts or details)
+- **Device information** (model, OS version, screen size)
+- **General location** (country/region derived from IP address)
+- **App version and session duration**
+
+This data is **anonymous** — it is not linked to any personal identifier and does not include your financial data (amounts, notes, categories, or transaction details). Analytics data is processed by Google under their [Privacy Policy](https://policies.google.com/privacy).
+
+You can opt out of analytics data collection by disabling "Usage & diagnostics" in your device settings: **Settings > Google > Usage & diagnostics**.
 
 ### Firebase Crashlytics
 
