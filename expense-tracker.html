@@ -32,7 +32,7 @@
         <a class="back" href=".">&larr; All policies</a>
         <h1>Privacy Policy</h1>
         <p class="app-name">Expense Tracker by Velzio</p>
-        <p class="updated">Last updated: April 24, 2026</p>
+        <p class="updated">Last updated: May 9, 2026</p>
 
         <h2>Overview</h2>
         <p>Expense Tracker is designed with privacy in mind. Your financial data is stored locally on your device. We do not have our own servers and do not store your personal financial information. When you use AI features (optional), aggregated spending summaries are sent to Google Gemini for processing &mdash; see the "Google Gemini AI" section below for details.</p>
@@ -46,6 +46,17 @@
             <li><strong>Settings:</strong> Theme preference (light/dark/system), currency, and language</li>
         </ul>
         <p>No account creation or sign-in is required. No bank linking or cloud sync is used.</p>
+
+        <h2>SMS Access</h2>
+        <p>The app includes an optional feature to automatically detect bank and UPI transaction messages from your SMS inbox. This feature:</p>
+        <ul>
+            <li>Is <strong>off by default</strong> — you must explicitly enable it in Settings and grant the READ_SMS permission</li>
+            <li>Only reads messages matching bank/UPI sender patterns (e.g. HDFCBK, SBIINB, UPI alerts)</li>
+            <li>Processes all SMS <strong>entirely on your device</strong> — no SMS content is ever uploaded or transmitted to any server</li>
+            <li>Stores only the parsed transaction details (amount, merchant, date) in your local database — the raw SMS text is not retained</li>
+            <li>Can be disabled at any time from Settings &gt; SMS Tracking</li>
+        </ul>
+        <p>We do not collect, store, or share any SMS content outside of your device.</p>
 
         <h2>Camera Access</h2>
         <p>The app includes a receipt scanner feature that uses your device camera to extract text from receipts. All text recognition is performed <strong>on-device</strong> using Google ML Kit. Photos taken or selected are processed locally and are <strong>never uploaded or transmitted</strong> to any server.</p>
@@ -102,7 +113,8 @@
             <li>Personal identifiers (name, email, phone number)</li>
             <li>Financial account information (bank accounts, card numbers)</li>
             <li>Location data (GPS)</li>
-            <li>Contacts, call logs, or messages</li>
+            <li>Contacts or call logs</li>
+            <li>SMS content sent to any server (SMS is only read locally for transaction detection when you opt in)</li>
             <li>Individual transaction details sent to external servers (only aggregated summaries for AI features)</li>
         </ul>
 
