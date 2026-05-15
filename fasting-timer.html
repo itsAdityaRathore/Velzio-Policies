@@ -104,6 +104,17 @@
         <h3>Firebase Remote Config</h3>
         <p>We use Firebase Remote Config to manage feature flags and app settings remotely. This allows us to enable/disable features, update pricing, and perform maintenance without requiring an app update. No personal data is collected through Remote Config.</p>
 
+        <h3>Home Screen Widget</h3>
+        <p>The app provides an optional home screen widget to display your fasting progress. Widget data is stored locally on your device and is never sent to any server.</p>
+
+        <h2>Permissions</h2>
+        <ul>
+            <li><strong>Internet:</strong> Required for serving ads (free version), in-app purchases, crash reporting, and fetching feature flags.</li>
+            <li><strong>Notifications:</strong> Used for local-only alerts — zone transitions, goal completion, daily reminders, and hydration reminders. No push notifications from any server.</li>
+            <li><strong>Foreground Service:</strong> Keeps the fasting timer running accurately when the app is in the background. This is a local timer process — no data is transmitted.</li>
+            <li><strong>Boot Completed:</strong> Reschedules local notification reminders after device restart.</li>
+        </ul>
+
         <h2>Data We Do NOT Collect</h2>
         <ul>
             <li>Personal identifiers (name, email, phone number)</li>
